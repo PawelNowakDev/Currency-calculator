@@ -1,0 +1,78 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    background-image: url(https://i.postimg.cc/tRZp3RWT/jing-fm-flying-money-clipart-2528266.png);
+    background-repeat: repeat;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    overflow-x: auto;
+}
+
+.form__labelText {
+    width: 20ch;
+    display: inline-block;
+}
+
+.form__field {
+    border: 2px solid white;
+    border-radius: 5px;
+    display: inline-block;
+    width: 25ch;
+}
+
+.form__button {
+    width: 100%;
+    border: none;
+    background-color: teal;
+    color: white;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.form__button:hover {
+    background-color: hsl(180, 100%, 30%);
+
+}
+
+.form__button:active {
+    background-color: hsl(180, 100%, 35%);
+
+}
+
+.form__fieldset {
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 20px 0;
+    box-shadow: 2px 2px 8px;
+    background-color: hsla(0, 0%, 79%, 0.904);
+}
+
+.form__legend {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: teal;
+    color: white;
+}
+
+.result {
+    width: 100%;
+    background-color: teal;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
