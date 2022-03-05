@@ -4,8 +4,8 @@ let exchangeRateElement = document.querySelector(".js-exchangeRate");
 let formElement = document.querySelector(".js-form");
 let resultElement = document.querySelector(".js-result");
 
-let rateEUR = 4.51;
-let rateUSD = 3.95;
+let rateEUR = 4.86;
+let rateUSD = 4.39;
 exchangeRateElement.value = rateEUR;
 
 currencyElement.addEventListener("input", () => {
