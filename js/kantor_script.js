@@ -1,28 +1,41 @@
-let currencyElement = document.querySelector(".js-currency");
-let amountElement = document.querySelector(".js-amount");
-let exchangeRateElement = document.querySelector(".js-exchangeRate");
-let formElement = document.querySelector(".js-form");
-let resultElement = document.querySelector(".js-result");
+const rateEUR = 4.51;
+const rateUSD = 3.95;
 
-let rateEUR = 4.51;
-let rateUSD = 3.95;
-exchangeRateElement.value = rateEUR;
+const setExchangeRate = () => {
+  const currencyElement = document.querySelector(".js-currency");
+  const exchangeRateElement = document.querySelector(".js-exchangeRate");
 
-currencyElement.addEventListener("input", () => {
-    if (currencyElement.value === "eur") {
-      exchangeRateElement.value = rateEUR;
-    }
-    if (currencyElement.value === "usd") {
-      exchangeRateElement.value = rateUSD;
-    }
-});
+  if (currencyElement.value === "eur") {
+    exchangeRateElement.value = rateEUR;
+  }
+  if (currencyElement.value === "usd") {
+    exchangeRateElement.value = rateUSD;
+  }
+}
 
-formElement.addEventListener("submit", (event) => {
-    event.preventDefault();
+const calculateResult = (event) => {
+  event.preventDefault();
 
-    let exchangeRate = exchangeRateElement.value;
-    let amount = amountElement.value;
+  const exchangeRateElement = document.querySelector(".js-exchangeRate");
+  const amountElement = document.querySelector(".js-amount");
+  const resultElement = document.querySelector(".js-result");
 
-    let result = exchangeRate * amount;
-    resultElement.innerText = result.toFixed(2);
-});
+  const exchangeRate = exchangeRateElement.value;
+  const amount = amountElement.value;
+  const result = exchangeRate * amount;
+
+  resultElement.innerText = result.toFixed(2);
+}
+
+const init = () => {
+  const exchangeRateElement = document.querySelector(".js-exchangeRate");
+  const currencyElement = document.querySelector(".js-currency");
+  const formElement = document.querySelector(".js-form");
+
+  exchangeRateElement.value = rateEUR;
+
+  currencyElement.addEventListener("input", setExchangeRate);
+  formElement.addEventListener("submit", calculateResult);
+}
+
+init();
