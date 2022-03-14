@@ -2,7 +2,7 @@
 
 ## Demo
 
-https://pawelnowakdev.github.io/Homepage/
+https://github.com/PawelNowakDev/Currency-calculator
 
 ## Description
 
