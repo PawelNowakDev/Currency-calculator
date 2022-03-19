@@ -1,4 +1,4 @@
-# Currency calculator
+# Currency converter
 
 ## Demo
 
