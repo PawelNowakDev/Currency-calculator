@@ -8,6 +8,7 @@ https://pawelnowakdev.github.io/Currency-converter/
 
 - HTML
 - CSS
+- BEM
 - JavaScript
 
 ## Description
