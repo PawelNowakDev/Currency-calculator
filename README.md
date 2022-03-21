@@ -2,7 +2,7 @@
 
 ## Demo
 
-https://pawelnowakdev.github.io/Currency-calculator/
+https://pawelnowakdev.github.io/Currency-converter/
 
 ## Technologies used
 
